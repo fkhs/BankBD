@@ -1,2 +1,2 @@
 # BankBD
-Multi-threaded client-server application with database PostgreSQL
+Multithreaded TCP Client/Server with database PostgreSQL, realization in C++
