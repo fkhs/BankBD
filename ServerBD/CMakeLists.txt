@@ -1,0 +1,12 @@
+cmake_minimum_required (VERSION 3.22 FATAL_ERROR)
+project (ServerBD)
+add_executable (ServerBDBank src/main.cpp src/Server.h src/Server.cpp src/SignInPSQL.h src/SignInPSQL.cpp)
+find_package(PostgreSQL REQUIRED)
+if(NOT PostgreSQL_FOUND)
+	message(SEND_ERROR "Failed to find postgresql")
+	return()
+else()
+	include_directories(${PostgreSQL_INCLUDE_DIRS})
+endif()
+target_link_libraries(ServerBDBank ${PostgreSQL_LIBRARIES})
+#src/SignInDataBase.h src/SignInDataBase.cpp
