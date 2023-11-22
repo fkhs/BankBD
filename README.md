@@ -13,6 +13,8 @@ Multithreaded TCP Client/Server with database PostgreSQL, realization in C++
 Email: budazhap.radnaev@inbox.ru
 
 ## Абстракция проекта
+![bankbd](https://github.com/fkhs/BankBD/assets/149998060/af76eed2-4ab1-41f8-b622-a2942f5f0f7e)
+
 
 ## Работа проекта
 1) Запускаемый файл сервера подключается к БД PostgreSQL на устройстве, также требуется настройка конфигурации PostgreSQL. Развертывается сервер (ServerBD), настраиваются переменные, создаются рабочие потоки (worker thread) и поток receive, принимающий подключения и создающий соединяющий поток (connection thread). 
